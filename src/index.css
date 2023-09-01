@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #121212;
+}
+
+div,
+a,
+h1,
+h2,
+h3,
+h4,
+li,
+ul,
+nav {
+  background: transparent;
+}
