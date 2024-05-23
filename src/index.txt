@@ -1,0 +1,124 @@
+<div className="w-full flex flex-col items-center justify-start gap-3 md:w-full py-5  mb-10">
+          <h2 className="text-white text-xl md:text-3xl w-full text-center">
+            Audios para meditação.
+          </h2>
+          <img src={audiomind} className="w-[80px] md:w-[200px]" alt="" />
+          <div className='p-2 w-fit md:w-full shadow-md shadow-gray-400 overflow-y-scroll'>
+            {/* <Audios title="Ates de Dormir" midia={relax} />
+            */}
+            {
+              dados && dados.map((date) => <Audios key={date.title} title={date.title} midia={date.url} />)
+            }
+
+          </div>
+        </div>
+        <div className='w-full flex flex-col items-center justify-center bg-slate-800 mb-10 rounded-md'>
+          <h1 className='text-white font-normal text-center text-xl mb-5  md:text-2xl mt-10'>
+            O Poder da meditação
+          </h1>
+          <img className='mb-10' src={mind} width={150} alt="" />
+          <div className='flex gap-10 p-2 overflow-x-scroll w-full'>
+            {
+              dados && dados.map((d) =>
+                <div key={d.title} className="p-2 rounded-md w-fit bg-gray-500 mb-5">
+                  <p className='bg-transparent'>{d.title}</p>
+                  {d.url && <audio src={d.url} className="w-fit bg-transparent" controls></audio>}
+                </div>)
+            }
+
+          </div>
+        </div>
+        {/* =================================== */}
+        <div className=' w-full flex flex-col items-center'>
+          <h1 className='text-white text-center font-normal p-2 text-2xl'>
+            Alcançe a felicidade de forma natural e efetiva.
+          </h1>
+          <p className='p-4 indent-6 text-center text-white'>
+            Para alcansar um resultado mais rapido e longicuo no combate a
+            depressão, ansiedade, ao stress, combater bacterias e virus, indicamos
+            fortemente o uso de produtos naturais no seu dia a dia,
+            sempre quando for meditar crie um ambiente saudavel com o uso de oleo essenciais.
+          </p>
+          <img src={indiczen} width={300} alt="" />
+
+          <div className='flex w-full mt-6'>
+            <p className='text-white text-center w-full'>
+              <a href="https://essenciais.net/joseronaldo" target="black" className='border-b border-blue-600 text-blue-600'>
+                Saiba mais</a> sobre o poder dos oléos essenciais.
+            </p>
+          </div>
+        </div>
+        {/* ================================== */}
+
+        {/* ================================== */}
+        <div className="flex w-full flex-col items-center mt-5 mb-5 p-4">
+          <h1 className="text-2xl md:text-3xl mb-3 text-center text-white w-full">
+            A hipinose pode te ajudar!
+          </h1>
+          <p className="indent-6 text-justify text-sm md:text-xl  text-white p-2">
+            A hipnose é um estado de consciência alterado caracterizado por um alto grau de concentração, relaxamento e sugestionabilidade.
+          </p>
+          <p className="indent-6 text-justify text-sm md:text-xl  text-white p-2">
+            Durante a hipnose, a pessoa está em um estado de consciência diferente do estado de vigília comum, mas não está totalmente inconsciente.
+            Ela mantém um nível de controle sobre suas ações e respostas, mas é mais suscetível à sugestão.
+          </p>
+          <p className="indent-6 text-justify text-sm md:text-xl  text-white p-2">
+            A hipnose é frequentemente usada em terapia
+            (hipnoterapia) para tratar uma variedade de questões, como ansiedade, fobias, dor crônica e vícios.
+          </p>
+          <p className='mb-5 mt-5 text-white'> <a href="#" className='text-blue-500 border-b-2'>Saiba mais</a> sobre hipinose.</p>
+        </div>
+        {/* ====================== */}
+        <Hipinose />
+        {/* ======================= */}
+        {/* ======================= */}
+        <div className="flex flex-col mt-5 mb-5 ">
+          <h1 className="text-white text-center w-full text-2xl">
+            O que é Respiração Guiada?
+          </h1>
+
+          <p className="p-4 indent-6 text-md text-justify text-white">
+            A respiração guiada é uma técnica de respiração que envolve a prática
+            de controlar conscientemente a sua respiração com a orientação de um instrutor,
+            um aplicativo ou um vídeo. Essa técnica é frequentemente usada em práticas de relaxamento,
+            meditação, ioga e terapia, e envolve a manipulação deliberada da frequência,
+            profundidade e ritmo da respiração. Os benefícios da respiração guiada para o corpo podem ser diversos, incluindo:
+          </p>
+
+          <ul className="flex flex-col list-disc px-6 mt-5">
+            <li className="text-sm mb-2 text-white">
+              Redução do estresse: A respiração guiada pode ajudar a reduzir os níveis de estresse, acalmando o sistema nervoso.
+              Isso ocorre porque a respiração lenta e profunda estimula o sistema nervoso parassimpático, que é responsável por promover o relaxamento.
+            </li>
+            <li className="text-sm mb-2 text-white">
+              Melhora do foco e concentração: Praticar a respiração guiada pode melhorar a capacidade de concentração e foco,
+              pois requer atenção plena no ato de respirar. Isso pode ser especialmente útil em situações em que a clareza mental é necessária.
+            </li>
+            <li className="text-sm mb-2 text-white">
+              Relaxamento muscular: A respiração guiada pode ajudar a relaxar os músculos tensos e aliviar a sensação de tensão no corpo.
+              Isso pode ser benéfico para pessoas que sofrem de dores musculares ou tensão crônica.
+            </li>
+          </ul>
+
+          <div className='flex w-full mt-6'>
+            <p className='text-white text-center w-full'>
+              <a href="#" className='border-b border-blue-600 text-blue-600'>
+                Saiba mais</a> sobre o respiração guiada.
+            </p>
+          </div>
+
+        </div>
+
+        {/* ======================= */}
+        <Woof />
+        {/* ======================= */}
+        <div className="flex flex-col items-center justify-center md:justify-start p-4 bg-slate-600 rounded-md">
+          <h1 className='text-white text-xl md:text-3xl text-center mt-5 mb-3'>
+            Entedendo a Proposta!
+          </h1>
+          <video src={intro} width={400} controls />
+          <p className="text-white text-lg mt-5">
+            Se a sua pratica a esses conceitos te touxe resultados,
+            compartilhe com pessoas que você deseja ajudar.
+          </p>
+        </div>
